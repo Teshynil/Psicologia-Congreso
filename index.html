@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        <script type="text/javascript">
+//		$('#programa').on('show.bs.modal',this.animate({opacity:1},1000));
+        </script>
+  </head>
+  <body style="background-color:#D6D6D6">
+	<div class="container-fluid hidden-print">
+	  <div class="row">
+	    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 responsive-container">
+        	<div class="container-fluid main-container">
+                <picture class="img-responsive">
+                    <source srcset="img/congreso_head.jpg" media="(min-width: 720px)"/>
+                    <source srcset="img/congreso_head_min.jpg" media="(max-width: 720px)"/>
+                    <img class="img-responsive" src="img/congreso_head_min.jpg" alt="test"/>
+                </picture>
+                    <img class="visible-xs-block img-responsive" style="margin-top:-1px;" src="img/congreso_head_min_secundary.jpg" alt="test"/>
+                    <div class="text-center">
+                      <div class="btn-middle" role="group">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscribete">Inscribete</button>
+                        <button type="button" class="btn btn-anahuac" data-toggle="modal" data-target="#programa">Programa</button>
+                      </div>
+                    </div>
+            </div>
+</div>
+      </div>
+</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <!-- Modals -->
+ <div class="hidden-print">
+    <div id="inscribete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Inscribete">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="pull-right btn btn-anahuac" data-dismiss="modal" aria-label="Close">Cerrar</button>
+            <h4 class="modal-title" id="InscribeteLabel">Inscribete</h4>
+            </div>
+          <div class="modal-body">
+            <p><b>Es importante que sepas que:</b><br>
+                1. No se aceptarán inscripciones sin el pago correspondiente o parcial.<br>
+                2. No se puede pagar SÓLO talleres, se debe pagar el congreso junto con los talleres elegidos.<br>
+                3. Puede pagar SÓLO el congreso, sin asistir a los talleres.<br>
+                4. Los talleres tienen un cupo limitado. Verificar el cupo de talleres antes de hacer el pago.<br>
+                5. El pago bancario sólo se puede realizar en UNA SOLA exhibición. Si quiere adicionar algún otro taller deberá realizar su pago directamente en la Escuela de Psicología Anáhuac Oaxaca.<br>
+                6. Una vez realizado el pago bancario deberá escanear o fotografiar (legible) el recibo y enviarlo junto con su formulario de inscripción.<br>
+                <b>&bull;Si comprendes lo anterior y ya realizaste tu pago, podemos seguir con la inscripción</b><br>
+                <b>&bull;Si apenas vas a realizar el pago has click en 'pagar'.</b>
+            </p>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-anahuac" data-dismiss="modal" data-toggle="modal" data-target="#pagar">Pagar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#inscripcion">Inscripción</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="programa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Programa">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="pull-right btn btn-anahuac" data-dismiss="modal" aria-label="Close">Cerrar</button>
+            <h4 class="modal-title" id="ProgramaLabel">Programa</h4>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+           	  <div class="col-sm-8 col-md-4 clearfix .hidden-xs-text-right">
+                    <a href="documents/programa.pdf" type="application/pdf"  class="btn btn-anahuac">
+                        <h3 class="glyphicon glyphicon-download pull-left"></h3>
+                        <h3 class="pull-right">&nbsp;Descargar</h3>
+                    </a>
+                </div>
+                <br class="visible-xs-block">
+              <div class="col-sm-8 col-md-4 col-md-offset-2 clearfix hidden">
+                    <a class="btn btn-anahuac">
+                        <h3 class="glyphicon glyphicon-globe pull-left"></h3>
+                        <h3 class="pull-right">&nbsp;Ver en linea</h3>
+                    </a>
+                </div>
+
+				
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-anahuac" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="pagar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Pagar">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="pull-right btn btn-anahuac" data-dismiss="modal" aria-label="Close">Cerrar</button>
+            <h4 class="modal-title" id="PagarLabel">Pagar</h4>
+            </div>
+            <div class="modal-body">
+                <p><b>Para poder realizar el pago necesitaras la siguiente informacion:</b><br>
+                Si le das click podras imprimir la información.</p>
+           	    <a href="javascript:window.print()"><img src="img/referencia.png" class="img-thumbnail img-responsive" alt="Placeholder image"></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-anahuac" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  	<div id="inscripcion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Inscripcion">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="pull-right btn btn-anahuac" data-dismiss="modal" aria-label="Close">Cerrar</button>
+            <h4 class="modal-title" id="InscripcionLabel">Inscripción</h4>
+            </div>
+            <div class="modal-body modal-form">
+                <p><b>Todos los datos que proporciones deben ser veridicos de lo contrario no se aceptára tu solicitud:</b><br>
+                </p>
+               <form name="form-inscripcion" id="form-inscripcion" enctype="multipart/form-data" action="register.php" method="post" role="form">
+                  <div>
+                  		<h4>Datos Personales</h4>
+                      <div class="form-group">
+                        <label for="nombre">Nombre(s)</label>
+                        <input type="text" class="form-control" name="nombre" required autocomplete="off" id="nombre" placeholder="Nombre(s)">
+                      </div>
+                      <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" class="form-control" name="appelidos" required autocomplete="off" id="apellidos" placeholder="Apellidos">
+                      </div>
+                      <div class="form-group">
+                        <label for="sexo">Sexo&nbsp;&nbsp;</label>
+                        <label class="radio-inline">
+                        	<input type="radio" name="sexo" autocomplete="off" required id="sexo1" value="M">Masculino</label>
+                        <label class="radio-inline">
+                        	<input type="radio" name="sexo" autocomplete="off" required id="sexo2" value="F">Femenino</label>
+                      </div>
+                      <div class="form-group">
+                      	<label for="edad">Edad</label>
+                        <input type="number" class="form-control" required name="edad" autocomplete="off" id="edad">
+                      </div>																																	
+                      <div class="form-group">
+                      	<label>Nivel academico</label>
+                        <select required class="form-control" name="nivelAcademico">
+                        	<option value="1">Estudiante</option>
+                            <option value="2">Técnico</option>
+                            <option value="3">Licenciado</option>
+                            <option value="4">Maestro</option>
+                            <option value="5">Doctor</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+	                      <label for="areaAcademica">Area Academica</label>
+                          <input type="text" class="form-control" required name="areaAcademica">
+                      </div>
+                      <div class="form-group">
+	                      <label for="organizacion">Organización de procedencia</label>
+                          <input type="text" class="form-control" name="organizacion" id="organizacion" autocomplete="off">
+                      </div>
+                      <h4>Información de Contacto</h4>																							
+                      <div class="form-group">
+	                      <label for="email">Email</label>
+                          <input type="email" name="email" required class="form-control" autocomplete="off" id="email">
+                      </div>
+                      <div class="form-group">
+	                      <label for="facebook">Facebook</label>
+                          <input type="text" name="facebook" class="form-control" autocomplete="off" id="facebook">
+                      </div>
+                      <div class="form-group">
+	                      <label for="tellocal">Telefono fijo</label>
+                          <input type="tel" name="tellocal" pattern="[0-9+]{7,13}" class="form-control" autocomplete="off" id="tellocal">
+                      </div>
+			 		  <div class="form-group">
+	                      <label for="telmovil">Telefono celular</label>
+                          <input type="tel" name="telmovil" required pattern="[0-9]{10,10}" title="Numero telefonico ej. 9511234567" class="form-control" autocomplete="off" id="telmovil">
+                      </div>
+                      <div class="form-group">
+	                      <label for="direccion">Direccion</label>
+                          <input type="text" name="direccion" required class="form-control" autocomplete="off" id="direccion">
+                      </div>
+                      <div class="form-group">
+	                      <label for="referencia">Como te enteraste del congreso</label>
+                          <input type="text" name="referencia" class="form-control" autocomplete="off" id="referencia">
+                      </div>
+                      <h4>Registra tus actividades</h4>
+                      <h5>Dia 1, Jueves 27 de Octubre</h5>
+                      <div class="form-group">
+                      	<label>Conferencia simultánea 12:00-13:00</label>
+                        <select class="form-control" name="SIMUL1A">
+							<option value="SIMUL1A/0000" selected>&nbsp;</option>
+                        	<option value="SIMUL1A/0001">Presentación de caso adicción a la pornografía desde la terapia Cognitivo-Conductual</option>
+                            <option value="SIMUL1A/0002">Psicopatología de las relaciones de pareja</option>
+                            <option value="SIMUL1A/0003">Intervención psicoterapéutica con técnicas en acción a víctimas de violencia de género</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      	<label>Conferencia simultánea 13:00-14:00</label>
+                        <select class="form-control" name="SIMUL1B">
+	                        <option value="SIMUL1B/0000" selected>&nbsp;</option>
+                        	<option value="SIMUL1B/0001">Rompiendo esquemas: ¿Cómo integrar la investigación cerebral, neuropsicología y psicología clínica?</option>
+                            <option value="SIMUL1B/0002">Logoterapia</option>
+                            <option value="SIMUL1B/0003">Las seducciones del autocuidado, ¿Quíen cuida a quien?</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      	<label>Taller 15:00-18:00</label>
+                        <select class="form-control" name="TALL1">
+	                        <option value="TALL1/0000" selected>&nbsp;</option>
+                        	<option value="TALL1/0001">Taller Trastornos de aprendizaje</option>
+                            <option value="TALL1/0002">Taller Diseño de un tratamiento cognitivo conductual en fobia social</option>
+                            <option value="TALL1/0003">Taller Abordajes psicoterapéuticos de los trastornos de la conducta alimentaria</option>
+                            <option value="TALL1/0004">Taller Manejo de conflictos en pareja</option>
+                            <option value="TALL1/0005">Taller Logoterapia</option>
+                            <option value="TALL1/0006">Taller TDAH Mito o trastorno real</option>
+                            <option value="TALL1/0007">Taller Recursos psicodramáticos y técnicas en acción en la psicoterapia grupal</option>
+                        </select>
+                      </div>
+                      <h5>Dia 2, Jueves 27 de Octubre</h5>
+                      <div class="form-group">
+                      	<label>Conferencia simultánea 12:00-13:00</label>
+                        <select class="form-control" name="SIMUL2A">
+							<option value="SIMUL2A/0000" selected>&nbsp;</option>
+                        	<option value="SIMUL2A/0001">Adicciones a la tecnología</option>
+                            <option value="SIMUL2A/0002">Evaluación e intervención psicológica en personas con diabetes</option>
+                            <option value="SIMUL2A/0003">¿En qué cree el psicoanálisis?</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      	<label>Conferencia simultánea 13:00-14:00</label>
+                        <select class="form-control" name="SIMUL2B">
+	                        <option value="SIMUL2B/0000" selected>&nbsp;</option>
+                        	<option value="SIMUL2B/0001">Psicoterapia vía internet vs. psicoterapia presencial</option>
+                            <option value="SIMUL2B/0002">Hablando de la muerte con los niños</option>
+                            <option value="SIMUL2B/0003">El proceso de actualización de psicoterapeutas para el mañana</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      	<label>Taller 15:00-18:00</label>
+                        <select class="form-control" name="TALL2">
+	                        <option value="TALL2/0000" selected>&nbsp;</option>
+                        	<option value="TALL2/0001">Taller ¿Qué habilidades clínicas necesita un psicoterapeuta?</option>
+                            <option value="TALL2/0002">Taller Higiene y trastornos del sueño</option>
+                            <option value="TALL2/0003">Taller Psicología integrativa aplicada a la personalidad</option>
+                            <option value="TALL2/0004">Taller “La conducta de los Celos” Terapia Racional Emotiva aplicada a los problemas de pareja</option>
+                            <option value="TALL2/0005">Taller Espectro Autista</option>
+                            <option value="TALL2/0006">Taller Neuropsicología Forense</option>
+                            <option value="TALL2/0007">Taller Entrevista Clínica e intervención en personas con diabetes y otros padecimientos crónicos</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      <label>Sube el escaneo o foto de tu recibo</label>
+                      	<input class="form-control" id="file" name="file" type="file">
+                      </div>
+	            </div>
+            </form>
+        	</div>
+        <div class="modal-footer">
+		        <input form="form-inscripcion" type="submit" class="btn btn-primary" value="Enviar">
+                <button type="button" class="btn btn-anahuac" data-dismiss="modal">Cerrar</button>
+            </div>
+      	</div>
+    </div>
+	</div>
+</div>
+  <!-- Print View-->
+  <img alt="print" src="img/referencia.png" style="width:100%; position:fixed" class="visible-print-block"/>
+  </body>
+</html>
